@@ -6,6 +6,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sat Mar 23 2024 Pawel Spoon <jack.tar@example.com> 3.1.1-0
+- setting page stores now settings as default, toggle between store and clear implemented
+
 * Thu Jan 06 2023 Pawel Spoon <jack.tar@example.com> 3.1.0-0
 - merged thumbnails support implemented by ZefQ
 

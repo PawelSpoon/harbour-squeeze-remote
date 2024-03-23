@@ -84,11 +84,22 @@ Dialog {
                 id: savesettingstofile
                 text: qsTr("Set as default")
                 description: qsTr("Save address and port to settings file.")
+                checked: true
+                onClicked: {
+                    if (savesettingstofile.checked) {
+                        deletesettings.checked = false;
+                    }
+                }
             }
             TextSwitch {
                 id: deletesettings
                 text: qsTr("Clear")
                 description: qsTr("Clear all existing data in settings file.")
+                onClicked: {
+                    if (deletesettings.checked) {
+                        savesettingstofile.checked = false;
+                    }
+                }
             }
 
             Label {
