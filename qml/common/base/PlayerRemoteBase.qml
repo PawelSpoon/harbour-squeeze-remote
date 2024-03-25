@@ -74,6 +74,7 @@ Rectangle {
         var _settings = {};
         try { _settings = JSON.parse(shared.settings); } catch(err) {}
         if (Array.isArray(_settings)) { _settings = {}; }
+        console.log("getSettings: ", JSON.stringify(_settings));
         return _settings;
     }
 

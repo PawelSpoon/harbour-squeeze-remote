@@ -4,58 +4,63 @@
 <context>
     <name>LibraryPage</name>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="100"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="128"/>
         <source>No items found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="105"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="133"/>
         <source>Go back home</source>
-        <translation>Jdi domu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="113"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="141"/>
         <source>Select another player</source>
         <translation type="unfinished">Vyber jiny player</translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="123"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="151"/>
         <source>Now playing</source>
-        <translation>Hraju</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="131"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="159"/>
         <source>Playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="173"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="201"/>
         <source>Input</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="180"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="208"/>
         <source>Type here...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="189"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="217"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="198"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="226"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="207"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="235"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="213"/>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="241"/>
         <source>More</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/LibraryPage.qml" line="294"/>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -100,52 +105,67 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="59"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="61"/>
         <source>Squeezebox server settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="79"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="81"/>
         <source>Server http port</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="85"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="87"/>
         <source>Set as default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="86"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="88"/>
         <source>Save address and port to settings file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="90"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="98"/>
         <source>Clear</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="91"/>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="99"/>
         <source>Clear all existing data in settings file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="96"/>
-        <source>Audio playback</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="101"/>
-        <source>Enable audio player</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="102"/>
-        <source>Experimental audio support. Sync with other players does not work.</source>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="109"/>
+        <source>Search settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="114"/>
+        <source>Show searchfield</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="115"/>
+        <source>Displays search field on all pages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="135"/>
+        <source>Audio playback</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="140"/>
+        <source>Enable audio player</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="141"/>
+        <source>Experimental audio support. Sync with other players does not work.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/sailfishos/pages/SettingsPage.qml" line="153"/>
         <source>Server tcp port (audio)</source>
         <translation type="unfinished"></translation>
     </message>

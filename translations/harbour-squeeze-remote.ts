@@ -4,6 +4,10 @@
 <context>
     <name>LibraryPage</name>
     <message>
+        <source>No items found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Go back home</source>
         <translation type="unfinished"></translation>
     </message>
@@ -20,18 +24,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Input</source>
         <translation type="unfinished"></translation>
     </message>
@@ -44,7 +36,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>No items found</source>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -120,6 +124,18 @@
     <message>
         <source></source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show searchfield</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Displays search field on all pages</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -4,47 +4,51 @@
 <context>
     <name>LibraryPage</name>
     <message>
+        <source>No items found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Go back home</source>
-        <translation>返回主页</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select another player</source>
-        <translation>选择其它播放器</translation>
+        <translation type="unfinished">选择其它播放器</translation>
     </message>
     <message>
         <source>Now playing</source>
-        <translation>正在播放</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation>播放列表</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>播放</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation>添加</translation>
-    </message>
-    <message>
-        <source>More</source>
-        <translation>更多</translation>
+        <translation type="unfinished">播放列表</translation>
     </message>
     <message>
         <source>Input</source>
-        <translation>输入</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type here...</source>
-        <translation>在此输入……</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>好的</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>No items found</source>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>More</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -120,6 +124,18 @@
     <message>
         <source></source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Search settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show searchfield</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Displays search field on all pages</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

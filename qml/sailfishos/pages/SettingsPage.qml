@@ -38,6 +38,8 @@ Dialog {
             topMargin: 100
         }
 
+        VerticalScrollDecorator {}
+
         Column {
             id: dialogcolumn
             width: parent.width - ( Theme.paddingLarge * 4)
@@ -104,6 +106,32 @@ Dialog {
 
             Label {
                 color: Theme.highlightColor
+                text: qsTr("Search settings")
+            }
+
+            TextSwitch {
+                id: showsearch
+                text: qsTr("Show search field")
+                description: qsTr("Displays search field on all pages")
+            }
+
+            TextField {
+                id: searchdelay
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                placeholderText: "0.800"
+                validator: DoubleValidator { bottom: 0.0; top: 2.0 }
+                //text:
+                inputMethodHints: Qt.ImhFormattedNumbersOnly
+                label: "Delay after typing"
+                EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                EnterKey.onClicked: focus = false
+            }
+
+            Label {
+                color: Theme.highlightColor
                 text: qsTr("Audio playback")
             }
 
@@ -130,11 +158,19 @@ Dialog {
     VerticalScrollDecorator { flickable: parent }
 
     }
+
+    Component.onCompleted: {
+        var settings = player.getSettings();
+        showsearch.checked = settings.hasOwnProperty("showsearch") ? settings["showsearch"] : false;
+        searchdelay.text = settings.hasOwnProperty("searchdelay") ? settings["searchdelay"] : "0.800";
+        serverip.focus = true;
+    }
     onAccepted: {
         var _settings;
 
         if (deletesettings.checked) {
             player.setSettings({});
+            return;
         }
 
         if (enableaudioplayer.checked !== player.enableAudioPlayer) {
@@ -151,10 +187,10 @@ Dialog {
             _settings["server_port"] = serverhttpport.text; // need to be deleted
             _settings["server_http_port"] = serverhttpport.text;
             _settings["server_tcp_port"] = parseInt(servertcpport.text);
-
-
+            _settings["showsearch"] = showsearch.checked
+            _settings["searchdelay"] = parseFloat(searchdelay.text);
             player.setSettings(_settings);
-            //player.saveSettings(); //not needed
+            player.saveSettings(); //not needed JS: i think its needed
         }
 
         player.backendServerAddress = serverip.text;

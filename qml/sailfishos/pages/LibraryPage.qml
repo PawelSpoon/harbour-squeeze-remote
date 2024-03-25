@@ -39,6 +39,13 @@ Page {
             remorse.execute(player.popup);
         }
     }*/
+    Timer {
+        id: filterChangeTimer
+        interval: 800  // 0.8 second
+        onTriggered: {
+            listView.model = menuModel.getVisibleItems();
+        }
+    }
     ListModel {
         id: menuModel
         property bool menuReady: player.menuReady
@@ -46,6 +53,27 @@ Page {
         Component.onCompleted: {
             player.setMenuModel(menuModel);
         }
+        property string filter: ""
+        onFilterChanged: {
+            filterChangeTimer.restart();
+        }
+
+        function matchesFilter(index) {
+            var item = get(index);
+            return item.media.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
+        }
+
+        function getVisibleItems() {
+            var visibleItems = Qt.createQmlObject('import QtQuick 2.0; ListModel {}', Qt.application);
+            var count = menuModel.count;
+            for (var i = 0; i < count; ++i) {
+                if (matchesFilter(i)) {
+                    visibleItems.append(get(i));
+                }
+            }
+            return visibleItems;
+        }
+
         onMenuDoneChanged: {
             if (menuDone) {
                 menuDone = true; //disconnect binding to player
@@ -258,6 +286,29 @@ Page {
                 listView.currentIndex = listView.currentIndex - 100
                 listView.positionViewAtIndex(listView.currentIndex, ListView.Beginning)
             }
+        }
+    }
+
+    SearchField {
+        id: searchField
+        placeholderText: qsTr("Search")
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        onTextChanged: {
+            // show player name if search field is empty
+            // reason: x of search collides with name and longer input would too
+            if (searchField.text === "") 
+            {
+                playerName.visible = true;
+            }
+            else {
+                playerName.visible = false;
+            }
+            menuModel.filter = searchField.text;
         }
     }
 
