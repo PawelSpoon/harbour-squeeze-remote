@@ -14,7 +14,7 @@ Name:       harbour-squeeze-remote
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    SqueezeR-emote
 Version:    3.2.0
-Release:    0
+Release:    1
 Group:      Qt/Qt
 License:    GPLv3
 URL:        https://openrepos.net/PawelSpoon/harbour-squeeze-remote
@@ -31,9 +31,11 @@ BuildRequires:  qt5-qttools-linguist
 Native remote control for logitech media server aka squeeze server.
 
 You can find more details on a raspberry pie based player and server here:
- https://www.picoreplayer.org 
+
+https://www.picoreplayer.org 
 
 Openrepos: https://openrepos.net/content/pawelspoon/squeezeremote
+
 Github: https://github.com/PawelSpoon/harbour-squeeze-remote
 
 
@@ -77,7 +79,7 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
-%{_bindir}
+%{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png

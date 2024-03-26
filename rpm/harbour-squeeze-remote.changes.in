@@ -6,7 +6,7 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Sat Mar 23 2024 Pawel Spoon <jack.tar@example.com> 3.2.0-0
+* Sat Mar 23 2024 Pawel Spoon <jack.tar@example.com> 3.2.0-1
 - search field everywhere
 - delay for search in settings page
 - fixing setting storage
